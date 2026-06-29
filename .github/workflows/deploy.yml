@@ -1,0 +1,25 @@
+name: Luxury Hotel CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+
+        uses: actions/checkout@v4
+
+      - name: Display Files
+
+        run: ls -R
+
+      - name: Success Message
+
+        run: echo "Luxury Hotel Website Build Successful!"
