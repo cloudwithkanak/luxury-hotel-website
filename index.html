@@ -1,290 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Crest Hotel</title>
 
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navigation -->
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">Royal Crest</div>
 
-<header>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 
-    <nav class="navbar">
-
-        <div class="logo">
-
-            Royal Crest Hotel
-
-        </div>
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="about.html">About</a></li>
-
-            <li><a href="rooms.html">Rooms</a></li>
-
-            <li><a href="gallery.html">Gallery</a></li>
-
-            <li><a href="restaurant.html">Restaurant</a></li>
-
-            <li><a href="booking.html">Booking</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
+    <a href="#" class="book-btn">Book Now</a>
 </header>
 
-<!-- Hero Section -->
-
-<section class="hero">
-
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
     <div class="hero-content">
-
         <h1>Experience Luxury Beyond Expectations</h1>
-
         <p>
-
-            Welcome to Royal Crest Hotel where elegance,
-            comfort and unforgettable hospitality meet.
-
+            Welcome to Royal Crest Hotel where comfort meets elegance and world-class hospitality.
         </p>
-
-        <a href="booking.html" class="btn">
-
-            Book Your Stay
-            
-
-        </a>
-
+        <a href="#rooms" class="btn">Explore Rooms</a>
     </div>
-
 </section>
 
-<!-- About -->
+<!-- ================= ROOMS ================= -->
+<section class="rooms" id="rooms">
 
-<section class="section">
+    <h2>Our Luxury Rooms</h2>
 
-    <h2>About Us</h2>
+    <div class="room-container">
 
-    <p>
-
-        Royal Crest Hotel combines modern luxury with timeless elegance.
-        Enjoy premium rooms, fine dining and world-class hospitality.
-
-    </p>
-
-</section>
-
-<!-- Rooms -->
-
-<section class="section">
-
-<h2>Featured Rooms</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="images/room1.jpg">
-
-<h3>Deluxe Room</h3>
-
-<p>$220 / Night</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/room2.jpg">
-
-<h3>Executive Suite</h3>
-
-<p>$380 / Night</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/room3.jpg">
-
-<h3>Presidential Suite</h3>
-
-<p>$750 / Night</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Luxury services -->
-
-<section class="section">
-
-<h2>Luxury Amenities</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Infinity Pool</h3>
-
-<p>Relax with breathtaking skyline views.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Luxury Spa</h3>
-
-<p>World-class wellness treatments.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Fitness Center</h3>
-
-<p>Modern equipment with personal trainers.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Airport Pickup</h3>
-
-<p>Private luxury transportation.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Restaurant -->
-
-<section class="restaurant">
-
-<div>
-
-<img src="images/restaurant.jpg">
-
-</div>
-
-<div>
-
-<h2>Fine Dining Experience</h2>
-
-<p>
-
-Our award-winning chefs prepare international cuisine using fresh ingredients.
-
-</p>
-
-<a href="restaurant.html" class="btn">
-
-Explore Menu
-
-</a>
-
-</div>
-
-</section>
-
-<!-- Gallery -->
-
-<section class="section">
-
-    <h2>Gallery</h2>
-
-    <p>
-
-        Explore our luxurious interiors and beautiful surroundings.
-
-    </p>
-
-</section>
-
-<!-- Reviews -->
-
-<section class="section">
-
-    <h2>Guest Reviews</h2>
-
-    <div class="cards">
-
-        <div class="card">
-
-            ⭐⭐⭐⭐⭐
-
-            <p>Excellent hospitality and amazing rooms.</p>
-
+        <div class="room-card">
+            <img src="images/room1.jpg" alt="Deluxe Room">
+            <h3>Deluxe Room</h3>
+            <p>Comfortable stay with modern interiors.</p>
         </div>
 
-        <div class="card">
-
-            ⭐⭐⭐⭐⭐
-
-            <p>Wonderful experience. Highly recommended.</p>
-
+        <div class="room-card">
+            <img src="images/room2.jpg" alt="Suite Room">
+            <h3>Suite Room</h3>
+            <p>Luxury suite with premium facilities.</p>
         </div>
 
-        <div class="card">
-
-            ⭐⭐⭐⭐⭐
-
-            <p>The best luxury hotel I've visited.</p>
-
+        <div class="room-card">
+            <img src="images/room3.jpg" alt="Ocean Room">
+            <h3>Ocean View Room</h3>
+            <p>Beautiful view with peaceful atmosphere.</p>
         </div>
 
     </div>
 
 </section>
 
-<footer>
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
 
-<h2>Royal Crest Hotel</h2>
+    <h2>Our Services</h2>
 
-<p>
+    <div class="service-container">
 
-Luxury • Comfort • Elegance
+        <div class="service-box">Free WiFi</div>
+        <div class="service-box">Swimming Pool</div>
+        <div class="service-box">Spa & Wellness</div>
+        <div class="service-box">Restaurant</div>
 
-</p>
+    </div>
 
-<p>
+</section>
 
-Email :
-info@royalcresthotel.com
-
-</p>
-
-<p>
-
-Phone :
-+91 9876543210
-
-</p>
-
-<p>
-
-© 2026 All Rights Reserved.
-
-</p>
-
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© 2026 Royal Crest Hotel | All Rights Reserved</p>
 </footer>
+
+</body>
+</html>
