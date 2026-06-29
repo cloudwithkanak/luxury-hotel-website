@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking | Royal Crest Hotel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            Royal Crest Hotel
+
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= PAGE BANNER ================= -->
+
+<section class="page-banner">
+
+    <h1>Book Your Stay</h1>
+
+    <p>Reserve your luxury experience today.</p>
+
+</section>
+
+<!-- ================= BOOKING FORM ================= -->
+
+<section class="section">
+
+    <h2>Reservation Form</h2>
+
+    <p>Please fill in the details below to reserve your room.</p>
+
+    <form id="bookingForm" class="booking-form">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            required>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            required>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Phone Number"
+            required>
+
+        <label>Check-in Date</label>
+
+        <input
+            type="date"
+            id="checkin"
+            required>
+
+        <label>Check-out Date</label>
+
+        <input
+            type="date"
+            id="checkout"
+            required>
+
+        <label>Select Room</label>
+
+        <select id="room" required>
+
+            <option value="">Choose Room</option>
+
+            <option>Deluxe Room</option>
+
+            <option>Executive Suite</option>
+
+            <option>Presidential Suite</option>
+
+        </select>
+
+        <label>Adults</label>
+
+        <input
+            type="number"
+            id="adults"
+            min="1"
+            value="1"
+            required>
+
+        <label>Children</label>
+
+        <input
+            type="number"
+            id="children"
+            min="0"
+            value="0">
+
+        <button
+            type="submit"
+            class="btn">
+
+            Confirm Booking
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>Royal Crest Hotel</h2>
+
+    <p>Luxury • Comfort • Elegance</p>
+
+    <p>Email : info@royalcresthotel.com</p>
+
+    <p>Phone : +91 9876543210</p>
+
+    <p>© 2026 Royal Crest Hotel</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
