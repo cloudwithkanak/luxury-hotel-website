@@ -1,215 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Royal Crest Hotel</title>
 
-    <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact | Royal Crest Hotel</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
+  <!-- Scroll To Top -->
+  <button id="scrollTopBtn">↑</button>
 
-<header>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ROYAL CREST</div>
 
-    <nav class="navbar">
-
-        <div class="logo">
-
-            Royal Crest Hotel
-
-        </div>
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="restaurant.html">Restaurant</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
     </nav>
 
-</header>
+    <div class="nav-btn">
+      <a href="booking.html" class="btn-gold">Book Now</a>
+    </div>
+  </header>
 
-<!-- ================= HERO ================= -->
+  <!-- Hero -->
+  <section class="page-hero contact-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>We are here to assist you 24/7</p>
+    </div>
+  </section>
 
-<section class="page-banner">
+  <!-- Contact Section -->
+  <section class="contact-section">
 
-    <h1>Contact Us</h1>
+    <div class="contact-container">
 
-    <p>We'd Love To Hear From You</p>
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
 
-</section>
+        <p><strong>Address:</strong> Royal Crest Hotel, Luxury Street, India</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> contact@royalcrest.com</p>
 
-<!-- ================= CONTACT DETAILS ================= -->
-
-<section class="section">
-
-    <h2>Get In Touch</h2>
-
-    <p>
-
-        Have questions or need assistance? Reach out to us anytime.
-        Our team is available 24/7 to make your stay memorable.
-
-    </p>
-
-    <div class="cards">
-
-        <div class="card">
-
-            <h3>📍 Address</h3>
-
-            <p>
-
-                Royal Crest Hotel<br>
-
-                MG Road, Indore,<br>
-
-                Madhya Pradesh, India
-
-            </p>
-
+        <div class="contact-socials">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
         </div>
+      </div>
 
-        <div class="card">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Your Message" rows="6" required></textarea>
 
-            <h3>📞 Phone</h3>
-
-            <p>
-
-                +91 9876543210
-
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>📧 Email</h3>
-
-            <p>
-
-                info@royalcresthotel.com
-
-            </p>
-
-        </div>
+        <button type="submit" class="btn-gold">Send Message</button>
+      </form>
 
     </div>
 
-</section>
+  </section>
 
-<!-- ================= CONTACT FORM ================= -->
-
-<section class="section">
-
-    <h2>Send Us a Message</h2>
-
-    <p>
-
-        Fill out the form below and we'll get back to you as soon as possible.
-
-    </p>
-
-    <form id="contactForm" class="booking-form">
-
-        <input
-            type="text"
-            id="contactName"
-            placeholder="Your Name"
-            required>
-
-        <input
-            type="email"
-            id="contactEmail"
-            placeholder="Your Email"
-            required>
-
-        <input
-            type="text"
-            id="subject"
-            placeholder="Subject"
-            required>
-
-        <textarea
-            id="message"
-            rows="6"
-            placeholder="Your Message"
-            required></textarea>
-
-        <button
-            type="submit"
-            class="btn">
-
-            Send Message
-
-        </button>
-
-    </form>
-
-</section>
-
-<!-- ================= MAP ================= -->
-
-<section class="section">
-
-    <h2>Our Location</h2>
-
-    <p>
-
-        Visit us and experience world-class hospitality.
-
-    </p>
-
-    <iframe
-
-        src="https://www.google.com/maps?q=Indore&output=embed"
-
-        width="100%"
-
-        height="450"
-
-        style="border:0; border-radius:15px;"
-
-        allowfullscreen=""
-
-        loading="lazy">
-
+  <!-- Map Section -->
+  <section class="map-section">
+    <iframe 
+      src="https://www.google.com/maps?q=india&output=embed"
+      loading="lazy">
     </iframe>
+  </section>
 
-</section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <h3>ROYAL CREST HOTEL</h3>
+      <p>Luxury Redefined</p>
+    </div>
 
-<!-- ================= FOOTER ================= -->
+    <div>
+      <p>&copy; 2026 Royal Crest Hotel. All Rights Reserved.</p>
+    </div>
 
-<footer>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
 
-    <h2>Royal Crest Hotel</h2>
-
-    <p>Luxury • Comfort • Elegance</p>
-
-    <p>Email : info@royalcresthotel.com</p>
-
-    <p>Phone : +91 9876543210</p>
-
-    <p>© 2026 Royal Crest Hotel. All Rights Reserved.</p>
-
-</footer>
-
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
-
 </html>
